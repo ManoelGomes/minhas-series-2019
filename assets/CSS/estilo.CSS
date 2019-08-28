@@ -12,6 +12,13 @@
 .header{
   background-color: #C0392B;
   background-color: linear-gradient(#C0392B, #E74C3C);
+  display: flex;
+  flex-direction: column;
+}
+@media(min-width: 600px){
+  .header{
+    flex-direction: column-reverse;
+  }
 }
 .header__title{
   color:white;
@@ -50,26 +57,34 @@
   color: rgb(240, 226, 226);
   display: block;
 }
-.menu__item > a :hover{
+.menu__item > a:hover{
   color: #E74C3C;
   background-color: #fff;
   
 }
 /* serie cover main page*/
+.series{
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
 
 .serie{
   text-align: center;
+  margin: 20px;
+  padding: 0 auto;
 }
 
-  .serie--title{
+  .serie__title{
       font-family: 'Open Sans', sans-serif;
       font-size: 28px;
       padding: 20px 0 2.5px;
       
   }
 
-  .serie--genre{
+  .serie__genre{
       font-family: 'Open Sans', sans-serif;
       font-size: 16px;
       columns: #a9a9a9;
@@ -77,14 +92,14 @@
       padding: 2.5px 0 20px;
   }
 
-  .serie--image{
+  .serie__image{
     display: block;
     max-width: 328px;
     margin: 0 auto;
     border-radius: 5px;
   }
 
-  .serie--readmore{
+  .serie__readmore{
     font-family: 'Roboto', sans-serif;
     color: #FFFFFF;
     background-color: #C0392B;
@@ -96,7 +111,7 @@
     border-radius: 6px;
   }
 
-  .serie--readmore:hover{
+  .serie__readmore:hover{
     background-color: #E74C3C;
   }
 
@@ -108,14 +123,15 @@
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
 }
-  .footer--image{
+  .footer__image{
     width: 25px;
     height: 25px;
     margin-top: 10px;
     margin-right: 10px;
   }
 
-  .footer--element{
+  .footer__element{
+    text-align: left;
     padding: 25px;
   }
 
@@ -170,6 +186,43 @@
       background-color: rgba(241, 196, 15, 767);
       margin: 10px;
     }
+    /*receba as novidades*/
+    .container-campo{
+      margin: 10px;
+      box-sizing: border-box;
+    }
+    .campo{
+        padding: 5px;
+        border: 0;
+        border-bottom: 1px #C0392B solid;
+        color: #C0392B;
+    }
+    .label{
+      color: black;
+      display: inline-block;
+      min-width: 100px;
+    }
+    .campo-texto{
+      border:1px black;
+      color: black;
+      resize: none;
+    }
+    .estados{
+      color: black;
+      min-width: 150px;
+    }
+    
+    .btn-salvar{
+      border: 0;
+      padding: 5px;
+      color: #C0392B (117, 66, 66);
+      background-color:#C0392B;
+      cursor: pointer;
+    }
+    .btn-salvar:hover{
+      background-color: rgba(182, 38, 19, 0.829);
+    }
+    
 
     /*serie avaliation*/
     .serieavaliation{

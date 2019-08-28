@@ -25,22 +25,102 @@
   </header>  
 
   <main>
-    <section class="serie">
-      <h1 class="serie--title">Game of Thrones </h1>
-        <span class="serie--genre">Fantasia</span>
-        <img class=" serie--image" src="assets/images/capas/game-of-thrones.jpg" alt="Trono de Ferro " >
-        <a href="#" class= "serie--readmore">Leia mais</a>
+    <div class="series container">
+<section class="serie">
+      <h1 class="serie__title">Game of Thrones </h1>
+        <span class="serie__genre">Fantasia</span>
+        <img class=" serie__image" src="assets/images/capas/game-of-thrones.jpg" alt="Trono de Ferro " >
+        <a href="#" class= "serie__readmore">Leia mais</a>
     </section>
-  </main>
+    <section class="serie">
+        <h1 class="serie__title">Game of Thrones </h1>
+          <span class="serie__genre">Fantasia</span>
+          <img class=" serie__image" src="assets/images/capas/game-of-thrones.jpg" alt="Trono de Ferro " >
+          <a href="#" class= "serie__readmore">Leia mais</a>
+      </section>
+      <section class="serie">
+          <h1 class="serie__title">Game of Thrones </h1>
+            <span class="serie__genre">Fantasia</span>
+            <img class=" serie__image" src="assets/images/capas/game-of-thrones.jpg" alt="Trono de Ferro " >
+            <a href="#" class= "serie__readmore">Leia mais</a>
+        </section>
+        <section class="serie">
+            <h1 class="serie__title">Game of Thrones </h1>
+              <span class="serie__genre">Fantasia</span>
+              <img class=" serie__image" src="assets/images/capas/game-of-thrones.jpg" alt="Trono de Ferro " >
+              <a href="#" class= "serie__readmore">Leia mais</a>
+          </section>
+          <section class="serie">
+              <h1 class="serie__title">Game of Thrones </h1>
+                <span class="serie__genre">Fantasia</span>
+                <img class=" serie__image" src="assets/images/capas/game-of-thrones.jpg" alt="Trono de Ferro " >
+                <a href="#" class= "serie__readmore">Leia mais</a>
+            </section>
+      </div>       
+  </main> 
+    
 
   <footer class="footer">
-    <div class="footer--element">Receba as novidades</div>
-    <div>
-      <div class="footer--element">Nos siga nas redes sociais </div>
-        <img src="assets/images/facebook.svg" alt="" class="footer--image">
-        <img src="assets/images/twitter.svg"  alt="" class="footer--image">
-        <img src="assets/images/youtube.svg"  alt="" class="footer--image">
+    <div class="footer__element container">
+      
+      <form>
+          <h1>Receba as novidades</h1>
+          <div class="container-campo">      
+            <label for="nome" class="label">Nome:</label>    
+            <input type="text" class="campo" id="Nome" required placeholder="Informe o nome completo">
+          </div>  
+          <div class="container-campo">
+              <label for="nome" class="label">Sobrenome:</label>    
+              <input type="text" class="campo" id="Sobrenome" disabled>
+            </div>  
+          <div class="container-campo">
+              <label for="Idade" class="label">Idade:</label>    
+              <input type="number"  id="Idade" min="10" max="100" required class="campo">
+          </div>   
+            <div class="container-campo">
+                <label for="" class="label">Sexo:</label>    
+                <input type="radio" id="sexo-masc" name="sexo">
+                <label for="sexo-masc">masculino</label>
+                <input type="radio" id="sexo-fem" name="sexo" checked>
+                <label for="sexo-masc">feminino</label>
+            </div> 
+            <div class="container-campo">
+                <label for="fone" class="label">Fone:</label>    
+                <input type="text" id="fone" class="campo" pattern="^[0-9]{5}-[0-9]{4}" placeholder="99987-2020">
+                
+            </div>
+            <div class="container-campo">
+              <input type="checkbox" id="email" checked>
+              <label for="email">Deseja receber e-mails?</label>
+              <input type="text" id="E-mail" placeholder="E-mail">
+            </div> 
+            <div class="container-campo">
+              <label for="estado" class="label">Estado:</label>
+              <select id="Estado" class="estados">
+                <option value="AC">Acre</option>
+                <option value="AM">Amazonas</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+              </select>
+            </div>
+            <div class="container-campo" style="display: flex">
+              <label for="obs" class="label">Comentarios:</label>
+              <textarea id="obs" cols="30" rows="10" class="campo-texto"></textarea>
+            </div>
+          <div class="container-campo">
+            <input type="submit" class="btn-salvar" value="Cadastrar">
+          </div> 
+        </form>
+      
     </div>
+    <div class="footer__element container">
+      <div >Nos siga nas redes sociais </div>
+      <div>
+        <img src="assets/images/facebook.svg" alt="" class="footer__image">
+        <img src="assets/images/twitter.svg"  alt="" class="footer__image">
+        <img src="assets/images/youtube.svg"  alt="" class="footer__image">
+    </div>
+  </div>
   </footer>
 </body>
 </html>
